@@ -15,9 +15,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - context: sencha/6.2.0.981
-            tag: fuadkleb/sencha-cmd:6.2.0.981
-            platforms: linux/amd64,linux/arm64
+          - context: sencha/6.2.0.103
+            tag: fuadkleb/sencha-cmd:6.2.0.103
+            platforms: linux/amd64
           - context: sencha/7.3.0.19
             tag: fuadkleb/sencha-cmd:7.3.0.19
             platforms: linux/amd64

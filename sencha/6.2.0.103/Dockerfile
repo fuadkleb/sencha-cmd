@@ -2,7 +2,7 @@ FROM openjdk:8-jre-slim AS build
 
 ARG ANT_VERSION=1.10.12
 ARG ANT_HOME=/opt/ant
-ARG SENCHACMD_VERSION=6.2.0.981
+ARG SENCHACMD_VERSION=6.2.0.103
 ARG OPENSSL_VERSION=1.1.1k
 
 # Install dependencies including tools to build OpenSSL
