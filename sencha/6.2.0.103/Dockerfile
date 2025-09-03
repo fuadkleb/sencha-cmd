@@ -50,6 +50,11 @@ RUN wget --no-check-certificate --no-cookies http://cdn.sencha.com/cmd/${SENCHAC
     && /tmp/SenchaCmd-${SENCHACMD_VERSION}*-linux-amd64.sh -Dall=true -q -dir /opt/Sencha/Cmd/${SENCHACMD_VERSION} \
     && unlink /tmp/SenchaCmd-${SENCHACMD_VERSION}*-linux-amd64.sh
 
+RUN set -eux; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends curl ca-certificates; \
+    rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
 # Set environment variables
